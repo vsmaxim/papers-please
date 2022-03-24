@@ -6,7 +6,7 @@ from papers_please import config
 captcha_client = CaptchaClient(config.CAPTCHA_TOkEN)
 
 # TODO: Telegram notification
-with ChromeDriver(headless=False) as driver:
+with ChromeDriver(headless=True) as driver:
     reserved = False
 
     while not reserved:
